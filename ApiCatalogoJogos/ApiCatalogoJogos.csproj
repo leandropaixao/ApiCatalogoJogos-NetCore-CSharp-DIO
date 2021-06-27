@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Controllers\V1\" />
+    <None Remove="InputModel\" />
+    <None Remove="ViewModel\" />
+    <None Remove="Services\" />
+    <None Remove="Repositories\" />
+    <None Remove="Swashbuckle.AspNetCore.Swagger" />
+    <None Remove="Swashbuckle.AspNetCore.SwaggerGen" />
+    <None Remove="Swashbuckle.AspNetCore.SwaggerUI" />
+    <None Remove="Entities\" />
+    <None Remove="System.Data.SqlClient" />
+    <None Remove="Microsoft.Data.Sqlite.Core" />
+    <None Remove="SQLite" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Controllers\V1\" />
+    <Folder Include="InputModel\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="Services\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.4" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="5.0.7" />
+    <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.7" />
+  </ItemGroup>
+</Project>
